@@ -6,6 +6,13 @@
 
 ************************************************************************************************************************************/
 
+/******************** GLOBAL ******************************/
+
+html {
+	font-family: arial, sans-serif;
+}
+
+/* make li's horiz and take away bullets */
 
 li {
 	list-style: none;
@@ -20,4 +27,15 @@ span {
 
 .n-child section:nth-of-type(2n) {
 	border: 1px solid purple;
+}
+
+/********************* NAV BAR TOP LIGHT RED *********************/
+
+/* making bar span 90% of page */
+ul.top {
+	width: 90%;
+	background-color: #FFB4B0;
+	border: 2px solid black;
+
+
 }
