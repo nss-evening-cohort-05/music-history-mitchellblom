@@ -1,63 +1,34 @@
 <!-- 
 
-1. Currently, the <li> items are block level elements. Add correct styles to remove the bullets and display them as inline elements. DONE
-2. The three <span> elements should be displayed as block elements with a 1 pixel border and 25 pixel margin on all sides. DONE
-3. In the article element with the class n-child, add a 1 pixel border around every even numbered section element. DONE
+Make the page look as close to the moqup as possible:
+https://classic.moqups.com/chortlehoort/1E8LJX7r/
 
 -->
 
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <title>Music History Pt. 1</title>
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
 
-<ul class="top">
-  <li class="block"><a href="#">View Music</a></li> |
-  <li class="block"><a href="#">Add Music</a></li> |
-  <li class="block"><a href="#">Profile</a></li>
-</ul>
+  <body>
+        <ul id="top">
+          <li><a href="#" default="active">View Music</a></li> |
+          <li><a href="#">Add Music</a></li> |
+          <li><a href="#">Profile</a></li>
+        </ul>
+      <span class="box" id="left">
+        <section> A </section>
+        <div> X </div>
+        <section> B </section>
+      </span>
+      <span class="box" id="right">
+        <section> A </section>
+        <section> B </section>
+      </span>
+  </body>
 
-<span class="inline">X</span>
-<span class="inline">Y</span>
-<span class="inline">Z</span>
-
-<article class="n-child">
-  <section> A </section>
-  <div> X </div>
-  <section> B </section>
-  <section> C </section>
-  <section> D </section>
-</article>
-
-<article class="n-type">
-  <section> A </section>
-  <section> B </section>
-  <aside> Aside </aside>
-  <section> C </section>
-  <section> D </section>
-  <section> E </section>
-</article>
-
-<article class="first-of-type">
-  <section> A </section>
-  <section> B </section>
-  <aside> Aside 1 </aside>
-  <section> C </section>
-  <section> D </section>
-  <aside> Aside 2 </aside>
-  <section> E </section>
-  <footer>Footer</footer>
-</article>
-
-<article class="three">
-  <section> A </section>
-  <section> B </section>
-  <aside> Aside </aside>
-  <section> C </section>
-  <section> D </section>
-  <section> E </section>
-</article>
-
+</html>
