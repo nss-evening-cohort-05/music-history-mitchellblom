@@ -55,7 +55,7 @@ div#left {
 	border: 3px solid black;
 	background-color: #4DD7FA;
 	margin-right: 1.5%;
-	flex: 1;
+	flex: 1;  
 }
 
 div#right {
