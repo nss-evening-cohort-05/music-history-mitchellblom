@@ -15,20 +15,48 @@ https://classic.moqups.com/chortlehoort/1E8LJX7r/
   </head>
 
   <body>
-        <ul id="top">
-          <li><a href="#" default="active">View Music</a></li> |
-          <li><a href="#">Add Music</a></li> |
-          <li><a href="#">Profile</a></li>
-        </ul>
-      <span class="box" id="left">
-        <section> Testing </section>
-        <div> More testing </div>
-        <section> 1, 2, 3 </section>
-      </span>
-      <span class="box" id="right">
-        <section> This </section>
-        <section> That </section>
-      </span>
+
+    <ul id="top">
+      <li><a href="#" default="active">View Music</a></li> |
+      <li><a href="#">Add Music</a></li> |
+      <li><a href="#">Profile</a></li>
+    </ul>
+
+    <span id="left">
+        <label for="songlength">Song length:</label>
+          <input type="range">
+        <label for="artist">Artist:</label>
+        <select name="artist">
+          <option value="">Options</option>
+          <option value="">Another Option</option>
+          <option value="">Yet Another</option>
+        </select>
+        <label for="album">Album:</label>
+        <select name="album">
+          <option value="">Options</option>
+          <option value="">Another Option</option>
+          <option value="">Yet Another</option>
+        </select>
+        <label for="genre">Genre:</label>
+          <input type="checkbox" name="genre" value="">
+        <label for="rock">Rock</label>
+          <input type="checkbox" name="genre" value="">
+        <label for="classical">Classical</label>
+          <input type="checkbox" name="genre" value="">
+        <label for="pop">Pop</label>
+          <input type="checkbox" name="genre" value="">
+        <label for="jazz">Jazz</label>
+          <input type="checkbox" name="genre" value="">
+        <label for="blues">Blues</label>
+          <input type="checkbox" name="genre" value="">
+        <label for="hiphop">Hip hop</label>
+
+    </span>
+
+    <span id="right">
+      <section> This </section>
+      <section> That </section>
+    </span>
   </body>
 
 </html>

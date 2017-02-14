@@ -39,6 +39,10 @@ ul#top li:active { 								/* links half styled */
 
 /******************** LOWER SPANS ******************************/
 
+label {
+	display: block;
+}
+
 span {
 	display: inline-block;
 	border: 2px solid black;
