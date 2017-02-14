@@ -48,14 +48,14 @@ span {
 
 span#left {
 	width: 20%;						
-	height: 47%;
+	min-height: 200px;
 	background-color: #4DD7FA;
 	margin-right: 1.5%;
 }
 
 span#right {
 	width: 60%;
-	height: 47%;
+	min-height: 200px;
 	background-color: #FEFAC0;
 	margin-left: 1.5%;
 }
