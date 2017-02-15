@@ -78,3 +78,11 @@ div#right li {
 	padding: auto 0;
 }
 
+h2.darkyellow {
+	color: #785616;
+}
+
+.genres {
+	display: flex;
+	flex-wrap: wrap;
+}
