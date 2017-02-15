@@ -25,7 +25,7 @@ ul#top {
 	border: 3px solid black;
 }
 
-ul#top li {
+li.top {
 	display: inline-block;
 	list-style: none;
 	color: #4DD7FA;
@@ -70,5 +70,11 @@ div#right {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
+}
+
+div#right li {
+	display: inline-block;
+	list-style: none;
+	padding: auto 0;
 }
 
