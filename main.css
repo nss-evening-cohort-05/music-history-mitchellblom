@@ -83,6 +83,13 @@ h2.darkyellow {
 }
 
 .genres {
-	display: flex;
-	flex-wrap: wrap;
+	display: inline-block;
+	flex-flow: row wrap;
+}
+
+button {
+	display: block;
+	margin: auto;
+	border-radius: 10%;
+	border: 2px solid black;
 }
