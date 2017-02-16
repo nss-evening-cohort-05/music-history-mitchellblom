@@ -106,7 +106,11 @@ h2 {
 	flex-flow: row wrap;
 }
 
-button {
+.buttonWrap {
+	padding: auto;
+}
+
+button.bigger {
 	display: inline-block;
 	font-size: 1.1em;
 	border-radius: 10%;
