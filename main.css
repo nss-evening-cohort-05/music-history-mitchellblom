@@ -103,15 +103,16 @@ h2 {
 
 .genres {
 	display: inline-block;
-	flex-flow: row wrap;
 }
 
-.buttonWrap {
+/*.buttonWrap {
 	padding: auto;
 }
+*/
 
 button.bigger {
-	display: inline-block;
+	display: flex;
+	justify-content: space-around;
 	font-size: 1.1em;
 	border-radius: 10%;
 	min-width: 50%;
