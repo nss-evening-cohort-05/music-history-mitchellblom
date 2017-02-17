@@ -10,13 +10,14 @@ console.log("original array: ", songs);
 
 // 1. Each student must add one song to the beginning and the end of the array.
 
-songs.unshift("Atlantic by Thrice on the album Vheissu");
-songs.push("Clipping by Mutemath on the album Armistice");
+songs.unshift("Atlantic - by Thrice on the album Vheissu");
+songs.push("Clipping - by Mutemath on the album Armistice");
 
 console.log("with added songs: ", songs);
 
 // 2. Loop over the array and remove any words or characters that obviously don't belong.
 // 3. Students must find and replace the > character in each item with a - character.
+// 4. Must add each string to the DOM in index.html in the main content area.
 
 function removeSymbols(array) {
 for (i = 0; i < array.length; i++) {
@@ -25,12 +26,11 @@ for (i = 0; i < array.length; i++) {
 	array[i] = array[i].replace("(", "");
 	array[i] = array[i].replace("!", "");
 	array[i] = array[i].replace("@", "");
+	array[i] = array[i].replace("- by", "|");
+	array[i] = array[i].replace("on the album", "|");
+	document.getElementById("song" + i).innerHTML = array[i];
 	}
-	console.log(array)
+	console.log(array);
 };
 
 removeSymbols(songs);
-
-// 4. Must add each string to the DOM in index.html in the main content area.
-
-// map method? - make array of the modified strings

@@ -112,7 +112,7 @@ h2 {
 
 button.bigger {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	font-size: 1.1em;
 	border-radius: 10%;
 	min-width: 50%;
