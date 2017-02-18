@@ -29,8 +29,10 @@ li.top {
 	display: inline-flex;
 	list-style: none;
 	color: #4DD7FA;
-	margin: auto;
-	padding: 2.5% 0;
+	margin: 3% 0;
+	padding: auto 0;
+/*	white-space: nowrap;
+	overflow: auto;*/
 }
 
 ul#top .active {
@@ -105,16 +107,19 @@ h2 {
 	display: inline-block;
 }
 
-/*.buttonWrap {
-	padding: auto;
+.buttonWrap {
+	padding: 2%;
+	margin: auto;
+	position: relative;
+	top: 30%;
+    left: 30%;
+/*    white-space: normal;
+	overflow: auto;*/
 }
-*/
 
 button.bigger {
-	display: flex;
-	justify-content: center;
+	max-width: 150%;
 	font-size: 1.1em;
 	border-radius: 10%;
-	min-width: 50%;
 	border: 2px solid black;
 }
