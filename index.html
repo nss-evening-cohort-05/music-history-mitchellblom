@@ -2,16 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Music History Pt. 2</title>
+    <title>Music History Pt. 3</title>
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
     <ul id="top">
-      <li class="top"><a href="#" class="active">View Music</a></li> |
-      <li class="top"><a href="#">Add Music</a></li> |
-      <li class="top"><a href="#">Profile</a></li>
+      <li class="top"><a href="#" id="link-home">List Music</a></li> |  <!-- class="active"-->
+      <li class="top"><a href="#" id="link-list">Add Music</a></li>
     </ul>
-    <div class="containers">
+
+<!--//////////////////////////////////////// LIST VIEW ///////////////////////////////////////////////-->
+
+    <div class="containers hidden" id="list-view">           <!--  the hidden class hides this by default -->
       <div id="left">
           <label for="songlength">Song length:</label>
             <input type="range" value="50%" class="wider">
@@ -44,76 +46,6 @@
       </div>
 
       <div id="right">
-<!--           <h2>
-            Song Name
-          </h2>
-            <ul>
-              <li>Artist name</li>
-              <li> | </li>
-              <li>Album name</li>
-              <li> | </li>
-              <li>Genre</li>
-            </ul>
-          <h2>
-            Song Name
-          </h2>
-            <ul>
-              <li>Artist name</li>
-              <li> | </li>
-              <li>Album name</li>
-              <li> | </li>
-              <li>Genre</li>
-            </ul>
-          <h2>
-            Song Name
-          </h2>
-            <ul>
-              <li>Artist name</li>
-              <li> | </li>
-              <li>Album name</li>
-              <li> | </li>
-              <li>Genre</li>
-            </ul>
-          <h2>
-            Song Name
-          </h2>
-            <ul>
-              <li>Artist name</li>
-              <li> | </li>
-              <li>Album name</li>
-              <li> | </li>
-              <li>Genre</li>
-            </ul>
-          <h2>
-            Song Name
-          </h2>
-            <ul>
-              <li>Artist name</li>
-              <li> | </li>
-              <li>Album name</li>
-              <li> | </li>
-              <li>Genre</li>
-            </ul>
-          <h2>
-            Song Name
-          </h2>
-            <ul>
-              <li>Artist name</li>
-              <li> | </li>
-              <li>Album name</li>
-              <li> | </li>
-              <li>Genre</li>
-            </ul>
-          <h2>
-            Song Name
-          </h2>
-            <ul>
-              <li>Artist name</li>
-              <li> | </li>
-              <li>Album name</li>
-              <li> | </li>
-              <li>Genre</li>
-            </ul> -->
           <h2>
             Song Name
           </h2>
@@ -158,7 +90,32 @@
             </ul>
       </div>
     </div>
-    <script type="text/javascript" src="songs.js"></script>
+
+<!--//////////////////////////////////////// ADD VIEW ///////////////////////////////////////////////-->
+
+    <div class="hidden" id="add-view">
+       <div class="addMusic">
+         <label for="songName">Song Name:</label>
+         <input type="text"></input>
+         <label for="artist">Artist:</label>
+         <input type="text"></input>
+         <label for="album">Album:</label>
+         <input type="text"></input>
+       </div>
+       <div class="buttonWrap">
+          <button class="addSong" align="center">Add</button>
+      </div>
+    </div>
+
+
+
+<!--//////////////////////////////////////// SCRIPTS ///////////////////////////////////////////////-->
+
+
+    <script type="text/javascript" src="javascripts/songs.js"></script>
+    <script type="text/javascript" src="javascripts/home.js"></script>
+    <script type="text/javascript" src="javascripts/list.js"></script>
+    <script type="text/javascript" src="javascripts/add.js"></script>
   </body>
 
 </html> 
