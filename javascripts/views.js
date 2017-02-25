@@ -12,6 +12,8 @@ listLink.addEventListener("click", function(event) {
   addDiv.classList.remove("visible");
   listDiv.classList.add("visible");
   listDiv.classList.remove("hidden");
+  addLink.classList.remove("active");
+  listLink.classList.add("active");
 });
 
 addLink.addEventListener("click", function(event) {
@@ -20,4 +22,6 @@ addLink.addEventListener("click", function(event) {
   listDiv.classList.remove("visible");
   addDiv.classList.add("visible");
   addDiv.classList.remove("hidden");
+  listLink.classList.remove("active");
+  addLink.classList.add("active");
 });
