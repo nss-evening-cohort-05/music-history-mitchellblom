@@ -108,13 +108,7 @@ h2 {
 }
 
 .buttonWrap {
-	padding: 2%;
-	margin: auto;
-	position: relative;
-	top: 30%;
-    left: 30%;
-/*    white-space: normal;
-	overflow: auto;*/
+	padding: 25px;
 }
 
 button.bigger {
@@ -127,14 +121,11 @@ button.bigger {
 
 /******************** LOWER SPANS ******************************/
 
-.visible {
-  display: block;
-}
+/*.visible {
+  display: inherit;
+}*/
 
 .hidden {
   display: none;
 }
-
-
-
 
