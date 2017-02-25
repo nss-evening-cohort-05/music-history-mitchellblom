@@ -35,7 +35,7 @@ a.active {
  }
 
 
-/******************** LOWER SPANS ******************************/
+/******************** LIST VIEW BOTH LOWER SPANS ******************************/
 
 .containers {
 	display: flex;
@@ -51,6 +51,9 @@ div {
 	margin-top: 0;
 	padding-top: 0;
 }
+
+
+/******************** LIST VIEW LEFT SPAN ******************************/
 
 div#left {				
 	min-height: 200px;
@@ -72,6 +75,8 @@ div#left select {
 .wider {
 	width: 90%;
 }
+
+/******************** LIST VIEW RIGHT SPAN ******************************/
 
 div#right {
 	min-height: 200px;
@@ -100,6 +105,8 @@ h2 {
 	display: inline-block;
 }
 
+/******************** BUTTONS ***********************************/
+
 .buttonWrap {
 	padding: 25px;
 }
@@ -111,12 +118,11 @@ button.bigger {
 	border: 2px solid black;
 }
 
+/******************** ADD VIEW **********************************/
 
-/******************** LOWER SPANS ******************************/
 
-/*.visible {
-  display: inherit;
-}*/
+
+/******************** VIEW TOGGLE ******************************/
 
 .hidden {
   display: none;
