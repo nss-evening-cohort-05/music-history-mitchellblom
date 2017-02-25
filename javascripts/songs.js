@@ -28,16 +28,16 @@ songs.push("Clipping - by Mutemath on the album Armistice");
 	// 4. Must add each string to the DOM in index.html in the main content area.
 
 function cleanAndWrite(array) {
-for (i = 0; i < array.length; i++) {
-	array[i] = array[i].replace(">", "-")
-	array[i] = array[i].replace("*", "");
-	array[i] = array[i].replace("(", "");
-	array[i] = array[i].replace("!", "");
-	array[i] = array[i].replace("@", "");
-	array[i] = array[i].replace("- by", "|");
-	array[i] = array[i].replace("on the album", "|");
-	document.getElementById("song" + i).innerHTML = array[i];
-	}
+    for (i = 0; i < array.length; i++) {
+        array[i] = array[i].replace(">", "-")
+        array[i] = array[i].replace("*", "");
+        array[i] = array[i].replace("(", "");
+        array[i] = array[i].replace("!", "");
+        array[i] = array[i].replace("@", "");
+        array[i] = array[i].replace("- by", "|");
+        array[i] = array[i].replace("on the album", "|");
+        document.getElementById("song" + i).innerHTML = array[i];
+    }
 };
 
 cleanAndWrite(songs);
@@ -45,7 +45,6 @@ cleanAndWrite(songs);
 ////////////////////// ADDING SONGS FROM PSEUDO-FORM ////////////////////////////
 
 addSongButton.addEventListener("click", function(event) {
-	songs.push(addSongTitle + " | " + addSongArtist + " | " + addSongAlbum);
-	console.log(songs);
-	cleanAndWrite(songs);
+    songs.push(addSongTitle.value + " | " + addSongArtist.value + " | " + addSongAlbum.value);
+    cleanAndWrite(songs);
 });
