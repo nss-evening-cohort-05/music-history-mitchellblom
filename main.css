@@ -1,12 +1,4 @@
-/*DIRECTIONS***********************************************************************************************************************
-
-1. Currently, the <li> items are block level elements. Add correct styles to remove the bullets and display them as inline elements.
-2. The three <span> elements should be displayed as block elements with a 1 pixel border and 25 pixel margin on all sides.
-3. In the article element with the class n-child, add a 1 pixel border around every even numbered section element.
-
-************************************************************************************************************************************/
-
-/******************** GLOBAL ******************************/
+/******************** GLOBAL *************************************/
 
 body {
 	font-family: arial, sans-serif;
@@ -25,7 +17,7 @@ ul#top {
 	border: 3px solid black;
 }
 
-li.top {
+li.topLink {
 	display: inline-flex;
 	list-style: none;
 	color: #4DD7FA;
@@ -35,14 +27,15 @@ li.top {
 	overflow: auto;*/
 }
 
-ul#top .active {
+a.active {
 	color: black;
 	text-decoration: none;
 	margin: auto;
+	font-weight: bold;
  }
 
 
-/******************** LOWER SPANS ******************************/
+/******************** LIST VIEW BOTH LOWER SPANS ******************************/
 
 .containers {
 	display: flex;
@@ -58,6 +51,9 @@ div {
 	margin-top: 0;
 	padding-top: 0;
 }
+
+
+/******************** LIST VIEW LEFT SPAN ******************************/
 
 div#left {				
 	min-height: 200px;
@@ -79,6 +75,8 @@ div#left select {
 .wider {
 	width: 90%;
 }
+
+/******************** LIST VIEW RIGHT SPAN ******************************/
 
 div#right {
 	min-height: 200px;
@@ -107,14 +105,10 @@ h2 {
 	display: inline-block;
 }
 
+/******************** BUTTONS ***********************************/
+
 .buttonWrap {
-	padding: 2%;
-	margin: auto;
-	position: relative;
-	top: 30%;
-    left: 30%;
-/*    white-space: normal;
-	overflow: auto;*/
+	padding: 25px;
 }
 
 button.bigger {
@@ -123,3 +117,14 @@ button.bigger {
 	border-radius: 10%;
 	border: 2px solid black;
 }
+
+/******************** ADD VIEW **********************************/
+
+
+
+/******************** VIEW TOGGLE ******************************/
+
+.hidden {
+  display: none;
+}
+
