@@ -1,5 +1,5 @@
 function writeArrayToDom() {
-    var arrayofSongs = SongIife.getNewSongArray();
+    var arrayofSongs = Songs.privateArrayOfSongs();
     var domString = "";
     for (var i = 0; i < arrayOfSongs.length; i++) {
         domString += `<div class="">`;
@@ -7,9 +7,9 @@ function writeArrayToDom() {
         domString += `<button class="deleteButton btn btn-default">Delete</button>`;
         domString += `</button></div>`;
     }
-    messageBoard.innerHTML = domString;
+    songContainer.innerHTML = domString;
 };
 
 function writeNewSongToDom() {
-    messageBoard.innerHTML = SongIife.getNewSongArray();
+    songContainer.innerHTML = SongIife.getNewSongArray();
 };
