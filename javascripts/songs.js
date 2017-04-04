@@ -19,8 +19,13 @@ var songContainer = document.getElementById("right");
         console.log(getNewSongArray.length);
         songsToWrite = "";
         for (var i = 0; i < getNewSongArray.length; i++) {
-        songsToWrite += getNewSongArray[i].album;
-        // 	// writeArrayToDom(songToWrite);
+	        songsToWrite += `<div class="songs">`;
+	        songsToWrite += `<div class="name">${getNewSongArray[i].name} `
+	        songsToWrite += `by the band ${getNewSongArray[i].artist} `
+	        songsToWrite += `on the album ${getNewSongArray[i].album}</div>`
+	    	songsToWrite += `<button class="deleteButton btn btn-default">Delete</button>`;
+	    	songsToWrite += `</button></div>`;
+	    	songsToWrite += `</div>`;
         }
          songContainer.innerHTML = songsToWrite;
     }
