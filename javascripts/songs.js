@@ -6,25 +6,23 @@ var addSongArtist = document.getElementById("addArtistField");
 var addSongAlbum = document.getElementById("addAlbumField");
 var songContainer = document.getElementById("right");
 
-	// console.log(Songs.getData(data));
-
     var privateArrayOfSongs = [];
 
     oldSongs.getNewSongArray = function(songsPassedFromSongIife) {
-    	privateArrayOfSongs = songsPassedFromSongIife;
-    	// console.log(privateArrayOfSongs);
-    	// songContainer.innerHTML = privateArrayOfSongs;
+    	privateArrayOfSongs.push(songsPassedFromSongIife)
+    	console.log(privateArrayOfSongs);
     	Songs.writeNewSongToArray(privateArrayOfSongs);
         return privateArrayOfSongs;
     }
 
     oldSongs.writeNewSongToArray = function(getNewSongArray) {
-        console.log(getNewSongArray);
-        
-        // for (var i = 0; i < getNewSongArray.length; i++) {
-        // 	console.log(i);
+        console.log(getNewSongArray.length);
+        songsToWrite = "";
+        for (var i = 0; i < getNewSongArray.length; i++) {
+        songsToWrite += getNewSongArray[i].album;
         // 	// writeArrayToDom(songToWrite);
-        // }
+        }
+         songContainer.innerHTML = songsToWrite;
     }
 
     return oldSongs;
