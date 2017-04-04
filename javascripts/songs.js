@@ -10,16 +10,21 @@ var songContainer = document.getElementById("right");
 
     var privateArrayOfSongs = [];
 
-    oldSongs.testFunction = function(songsPassedFromSongIife) {
-    	console.log("testFunction works:", songsPassedFromSongIife);
-    }
-
-    oldSongs.getNewSongArray = function() {
+    oldSongs.getNewSongArray = function(songsPassedFromSongIife) {
+    	privateArrayOfSongs = songsPassedFromSongIife;
+    	// console.log(privateArrayOfSongs);
+    	// songContainer.innerHTML = privateArrayOfSongs;
+    	Songs.writeNewSongToArray(privateArrayOfSongs);
         return privateArrayOfSongs;
     }
 
-    oldSongs.writeNewSongToArray = function(songToWrite) {
-        writeArrayToDom(songToWrite);
+    oldSongs.writeNewSongToArray = function(getNewSongArray) {
+        console.log(getNewSongArray);
+        
+        // for (var i = 0; i < getNewSongArray.length; i++) {
+        // 	console.log(i);
+        // 	// writeArrayToDom(songToWrite);
+        // }
     }
 
     return oldSongs;

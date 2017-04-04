@@ -6,7 +6,7 @@ var Songs = (function(oldSongs) {
         var jData = JSON.parse(this.responseText);
         data = jData.songs;
         for (var i = 0; i < data.length; i++) {
-            Songs.testFunction(data[i]);
+            Songs.getNewSongArray(data[i]);
         }
         return data;
     }
@@ -22,9 +22,7 @@ var Songs = (function(oldSongs) {
     songRequest.send();
 
     oldSongs.getXhr = function() {
-
         return data;
-
     }
 
     return oldSongs;
