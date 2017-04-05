@@ -1,17 +1,18 @@
 var Songs = (function(oldSongs) {
 
-var addSongButton = document.getElementById("clickToAddSong");
-var addSongTitle = document.getElementById("addTitleField");
-var addSongArtist = document.getElementById("addArtistField");
-var addSongAlbum = document.getElementById("addAlbumField");
-var songContainer = document.getElementById("right");
+    var addSongButton = document.getElementById("clickToAddSong");
+    var addSongTitle = document.getElementById("addTitleField");
+    var addSongArtist = document.getElementById("addArtistField");
+    var addSongAlbum = document.getElementById("addAlbumField");
+    var songContainer = document.getElementById("right");
+    var deleteSongButton = document.getElementsByClassName("deleteButton").innerHTML;
 
     var privateArrayOfSongs = [];
 
     oldSongs.getNewSongArray = function(songsPassedFromSongIife) {
-    	privateArrayOfSongs.push(songsPassedFromSongIife)
-    	console.log(privateArrayOfSongs);
-    	Songs.writeNewSongToArray(privateArrayOfSongs);
+        privateArrayOfSongs.push(songsPassedFromSongIife)
+        console.log(privateArrayOfSongs);
+        Songs.writeNewSongToArray(privateArrayOfSongs);
         return privateArrayOfSongs;
     }
 
@@ -19,15 +20,29 @@ var songContainer = document.getElementById("right");
         console.log(getNewSongArray.length);
         songsToWrite = "";
         for (var i = 0; i < getNewSongArray.length; i++) {
-	        songsToWrite += `<div class="songs">`;
-	        songsToWrite += `<div class="name">${getNewSongArray[i].name} `
-	        songsToWrite += `by the band ${getNewSongArray[i].artist} `
-	        songsToWrite += `on the album ${getNewSongArray[i].album} </div>`
-	    	songsToWrite += `<button class="deleteButton btn btn-default">Delete</button>`;
-	    	songsToWrite += `</button></div>`;
-	    	songsToWrite += `</div>`;
+            songsToWrite += `<div class="songs">`;
+            songsToWrite += `<div class="name">${getNewSongArray[i].name} `
+            songsToWrite += `by the band ${getNewSongArray[i].artist} `
+            songsToWrite += `on the album ${getNewSongArray[i].album} </div>`
+            songsToWrite += `<button class="deleteButton btn btn-default">Delete</button>`;
+            songsToWrite += `</div>`;
+            // songsToWrite += `</div>`;
         }
-         songContainer.innerHTML = songsToWrite;
+        songContainer.innerHTML = songsToWrite;
+        Songs.makeDeleteListener();
+    }
+
+    function deleteSong(e) {
+        if (e.target.className === "deleteButton") {
+            e.target.parentElement = "";
+        };
+    };
+
+    oldSongs.makeDeleteListener = function() {
+    	// console.log(deleteSongButton);
+        // deleteSongButton.addEventListener("click", function() {
+        //     Songs.deleteSong();
+        // })
     }
 
     return oldSongs;
