@@ -5,7 +5,6 @@ var Songs = (function(oldSongs) {
     var addSongArtist = document.getElementById("addArtistField");
     var addSongAlbum = document.getElementById("addAlbumField");
     var songContainer = document.getElementById("right");
-    var deleteSongButton = document.getElementsByClassName("deleteButton").innerHTML;
 
     var privateArrayOfSongs = [];
 
@@ -29,7 +28,6 @@ var Songs = (function(oldSongs) {
             // songsToWrite += `</div>`;
         }
         songContainer.innerHTML = songsToWrite;
-        Songs.makeDeleteListener();
     }
 
     function deleteSong(e) {
@@ -38,12 +36,9 @@ var Songs = (function(oldSongs) {
         };
     };
 
-    oldSongs.makeDeleteListener = function() {
-    	// console.log(deleteSongButton);
-        // deleteSongButton.addEventListener("click", function() {
-        //     Songs.deleteSong();
-        // })
-    }
+    // oldSongs.makeDeleteListener = function() {
+    // 	domDeleteListener();
+    // }
 
     return oldSongs;
 
