@@ -22,7 +22,7 @@ var songContainer = document.getElementById("right");
 	        songsToWrite += `<div class="songs">`;
 	        songsToWrite += `<div class="name">${getNewSongArray[i].name} `
 	        songsToWrite += `by the band ${getNewSongArray[i].artist} `
-	        songsToWrite += `on the album ${getNewSongArray[i].album}</div>`
+	        songsToWrite += `on the album ${getNewSongArray[i].album} </div>`
 	    	songsToWrite += `<button class="deleteButton btn btn-default">Delete</button>`;
 	    	songsToWrite += `</button></div>`;
 	    	songsToWrite += `</div>`;
