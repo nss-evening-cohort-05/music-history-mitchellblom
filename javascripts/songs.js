@@ -25,9 +25,9 @@ var Songs = (function(oldSongs) {
             songsToWrite += `on the album ${getNewSongArray[i].album} </div>`
             songsToWrite += `<button class="deleteButton btn btn-default">Delete</button>`;
             songsToWrite += `</div>`;
-            // songsToWrite += `</div>`;
         }
         songContainer.innerHTML = songsToWrite;
+		songContainer.innerHTML += `<button class="btn btn-default">Load More Songs</button>`;
     }
 
     function deleteSong(e) {
