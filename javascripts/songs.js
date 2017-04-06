@@ -28,9 +28,9 @@ var Songs = (function(oldSongs) {
         songsToWrite = "";
         for (var i = 0; i < getNewSongArray.length; i++) {
             songsToWrite += `<div class="songs">`;
-            songsToWrite += `<div class="name">${getNewSongArray[i].name} `
-            songsToWrite += `by the band ${getNewSongArray[i].artist} `
-            songsToWrite += `on the album ${getNewSongArray[i].album} </div>`
+            songsToWrite += `<div class="name"><i>${getNewSongArray[i].name}</i> `
+            songsToWrite += `by the artist <i>${getNewSongArray[i].artist}</i> `
+            songsToWrite += `on the album <i>${getNewSongArray[i].album}</i> </div>`
             songsToWrite += `<button class="deleteButton btn btn-default">Delete</button>`;
             songsToWrite += `</div>`;
         }
@@ -42,9 +42,9 @@ var Songs = (function(oldSongs) {
         songsToWrite2 = "";
         for (var i = 0; i < getNewSongArray2.length; i++) {
             songsToWrite2 += `<div class="songs">`;
-            songsToWrite2 += `<div class="name">${getNewSongArray2[i].name} `
-            songsToWrite2 += `by the band ${getNewSongArray2[i].artist} `
-            songsToWrite2 += `on the album ${getNewSongArray2[i].album} </div>`
+            songsToWrite2 += `<div class="name"><i>${getNewSongArray2[i].name}</i> `
+            songsToWrite2 += `by the artist <i>${getNewSongArray2[i].artist}</i> `
+            songsToWrite2 += `on the album <i>${getNewSongArray2[i].album}</i> </div>`
             songsToWrite2 += `<button class="deleteButton btn btn-default">Delete</button>`;
             songsToWrite2 += `</div>`;
         }
