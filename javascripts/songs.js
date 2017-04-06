@@ -19,9 +19,7 @@ var Songs = (function(oldSongs) {
     }
 
     oldSongs.getNewSongArray2 = function(songsPassedFromSongIife2) {
-    	console.log(songsPassedFromSongIife2);
         privateArrayOfSongs2.push(songsPassedFromSongIife2)
-        console.log(privateArrayOfSongs2);
         Songs.writeNewSongToArray2(privateArrayOfSongs2);
         return privateArrayOfSongs2;
     }
@@ -41,7 +39,6 @@ var Songs = (function(oldSongs) {
     }
 
     oldSongs.writeNewSongToArray2 = function(getNewSongArray2) {
-        console.log(getNewSongArray2.length);
         songsToWrite2 = "";
         for (var i = 0; i < getNewSongArray2.length; i++) {
             songsToWrite2 += `<div class="songs">`;

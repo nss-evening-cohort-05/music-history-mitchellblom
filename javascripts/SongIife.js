@@ -13,7 +13,6 @@ var Songs = (function(oldSongs) {
     }
 
     function getData2(data2) {
-    	console.log(data2);
         var jData = JSON.parse(this.responseText);
         data2 = jData.songs;
         for (var i = 0; i < data2.length; i++) {
@@ -29,11 +28,13 @@ var Songs = (function(oldSongs) {
     songRequest.open("GET", "songs1.json");
     songRequest.send();
 
-    var songRequest2 = new XMLHttpRequest();
-    songRequest2.addEventListener("load", getData2);
-    songRequest2.addEventListener("error", fileFailed);
-    songRequest2.open("GET", "songs2.json");
-    songRequest2.send();
+    oldSongs.execute2ndRequest = function() {
+	    var songRequest2 = new XMLHttpRequest();
+	    songRequest2.addEventListener("load", getData2);
+	    songRequest2.addEventListener("error", fileFailed);
+	    songRequest2.open("GET", "songs2.json");
+	    songRequest2.send();
+	}
 
     oldSongs.getXhr = function() {
         return data;

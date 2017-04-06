@@ -1,6 +1,6 @@
-function writeNewSongToDom() {
-    songContainer.innerHTML = SongIife.privateArrayOfSongs;
-};
+// function writeNewSongToDom() {
+//     songContainer.innerHTML = SongIife.privateArrayOfSongs;
+// };
 
 document.addEventListener ("click", function(e) {
 	if (e.target.className.split(" ")[0] === "deleteButton") {
@@ -10,7 +10,8 @@ document.addEventListener ("click", function(e) {
 
 document.addEventListener ("click", function(e) {
 	if (e.target.id === "loadMoreSongs") {
-		console.log("firing");
-		Songs.getNewSongArray2();
+		Songs.execute2ndRequest();
 	}
 });
+		
+// function Songs.getNewSongArray2();
