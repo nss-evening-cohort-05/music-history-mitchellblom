@@ -1,11 +1,11 @@
 # NSS Music History Part 4
 
-![Splashpage]()
+![Splashpage](https://raw.githubusercontent.com/nss-evening-cohort-05/music-history-mitchellblom/part4/mh4.png)
 
 <hr>
 
 ## Project Summary / Demonstrated
-Continuation of long term project. Adding **JSON**, **XHR**, and **IIFEs**. Recognize and rewrite legacy code.
+Continuation of long term project. Adding **JSON**, **XHR**, **Bootstrap** and **IIFEs**. Recognize and rewrite legacy code.
 
 <hr>
 
