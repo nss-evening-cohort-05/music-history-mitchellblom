@@ -1,20 +1,27 @@
-# Music History
+# NSS Music History Part 4
 
-This is the project that you will be working for your individual work throughout the entire front end course. Don't worry, you'll be building lots of other applications, but when you learn a new technique, library or language, you'll be cutting your teeth with it on Music History.
+![Splashpage](https://raw.githubusercontent.com/nss-evening-cohort-05/music-history-mitchellblom/part4/mh4.png)
 
-## Individual Assignment
+<hr>
 
-You will be building the basic structure of your Music History application in HTML and making it look good with the skills you learned in CSS.
+## Project Summary / Demonstrated
+Continuation of long term project. Adding **JSON**, **XHR**, **Bootstrap** and **IIFEs**. Recognize and rewrite legacy code.
 
-Visit the [Music History mockup](https://moqups.com/chortlehoort/1E8LJX7r/) that I created. You will be recreating that document in your own HTML file.
+<hr>
 
-### Criteria 
+## Requirements
 
-1. Create five options for the artist select element of any artist that you enjoy.
-1. Create at least five options for the album select element. One, or more, album for each artist.
-1. The links in the navigation bar don't need to link to anything just yet, you can use `<a href="#">View music</a>` for now
-1. Pick your four favorite songs from the artists you have chosen and use the information for each in the list that's on the right-hand side. You can use `h1` tags, `div` tags, `section` tags... whatever you like.
+### Part One
 
-## Completing
+1. Read from local JSON file with an XHR.
+1. Loop over results and inject into Music History list view.
+1. Add delete button to each row and, when it is clicked, delete the entire row in the DOM.
 
-Once you are done, make sure you add your files to git, make a commit, and then push your new code up to Github with the following command `git push origin master`.
+### Part Two
+
+1. Take your music and split it into two JSON files instead of them all living on one file.
+1. Add a button at the bottom of your music list and label it `More >`.
+1. Load the songs from the first list, and inject the DOM into the document as you've already done.
+1. When the user clicks that button, load the songs from the second JSON file and append them to the bottom of the existing music, but before the More button.
+
+<hr>
