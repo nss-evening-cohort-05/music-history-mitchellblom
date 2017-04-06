@@ -35,7 +35,7 @@ var Songs = (function(oldSongs) {
             songsToWrite += `</div>`;
         }
         songContainer.innerHTML = songsToWrite;
-		songContainer.innerHTML += `<button id="loadMoreSongs" class="btn btn-default">Load More Songs</button>`;
+        songContainer.innerHTML += `<button id="loadMoreSongs" class="btn btn-default">Load More Songs</button>`;
     }
 
     oldSongs.writeNewSongToArray2 = function(getNewSongArray2) {
@@ -51,6 +51,8 @@ var Songs = (function(oldSongs) {
         songContainer.innerHTML = songsToWrite;
         songContainer.innerHTML += songsToWrite2;
         songContainer.innerHTML += `<button id="loadMoreSongs" class="btn btn-default">Load More Songs</button>`;
+        var loadMoreSongsButton = document.getElementById("loadMoreSongs");
+        loadMoreSongsButton.classList.add("disabled"); 
     }
 
     function deleteSong(e) {

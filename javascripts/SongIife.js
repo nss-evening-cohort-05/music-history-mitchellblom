@@ -29,12 +29,12 @@ var Songs = (function(oldSongs) {
     songRequest.send();
 
     oldSongs.execute2ndRequest = function() {
-	    var songRequest2 = new XMLHttpRequest();
-	    songRequest2.addEventListener("load", getData2);
-	    songRequest2.addEventListener("error", fileFailed);
-	    songRequest2.open("GET", "songs2.json");
-	    songRequest2.send();
-	}
+        var songRequest2 = new XMLHttpRequest();
+        songRequest2.addEventListener("load", getData2);
+        songRequest2.addEventListener("error", fileFailed);
+        songRequest2.open("GET", "songs2.json");
+        songRequest2.send();
+    }
 
     oldSongs.getXhr = function() {
         return data;
