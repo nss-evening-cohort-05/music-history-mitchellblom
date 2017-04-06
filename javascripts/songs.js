@@ -1,15 +1,19 @@
 var Songs = (function(oldSongs) {
 
-    var addSongButton = document.getElementById("clickToAddSong");
-    var addSongTitle = document.getElementById("addTitleField");
-    var addSongArtist = document.getElementById("addArtistField");
-    var addSongAlbum = document.getElementById("addAlbumField");
-    var songContainer = document.getElementById("right");
+    // var songContainer = document.getElementById("right");
+    // console.log(songContainer);
+
+    var songContainer = $("#right");
 
     var privateArrayOfSongs = [];
     var privateArrayOfSongs2 = [];
     var songsToWrite = "";
     var songsToWrite2 = "";
+
+// Select element by Id: 			$("#right")
+// Select element by Class: 		$(".movielist")
+// Select element by Tag name: 		$("img")
+// Select element by Attribute: 	$("input[value=’Horror’]")
 
 
     oldSongs.getNewSongArray = function(songsPassedFromSongIife) {
@@ -34,8 +38,8 @@ var Songs = (function(oldSongs) {
             songsToWrite += `<button class="deleteButton btn btn-default">Delete</button>`;
             songsToWrite += `</div>`;
         }
-        songContainer.innerHTML = songsToWrite;
-        songContainer.innerHTML += `<button id="loadMoreSongs" class="btn btn-default">Load More Songs</button>`;
+        songContainer.html(songsToWrite);
+        songContainer.append(`<button id="loadMoreSongs" class="btn btn-default">Load More Songs</button>`);
     }
 
     oldSongs.writeNewSongToArray2 = function(getNewSongArray2) {
@@ -48,11 +52,11 @@ var Songs = (function(oldSongs) {
             songsToWrite2 += `<button class="deleteButton btn btn-default">Delete</button>`;
             songsToWrite2 += `</div>`;
         }
-        songContainer.innerHTML = songsToWrite;
-        songContainer.innerHTML += songsToWrite2;
-        songContainer.innerHTML += `<button id="loadMoreSongs" class="btn btn-default">Load More Songs</button>`;
-        var loadMoreSongsButton = document.getElementById("loadMoreSongs");
-        loadMoreSongsButton.classList.add("disabled"); 
+        songContainer.html(songsToWrite);
+        songContainer.append(songsToWrite2);
+        songContainer.append(`<button id="loadMoreSongs" class="btn btn-default">Load More Songs</button>`);
+        var loadMoreSongsButton = $("#loadMoreSongs");
+        $("loadMoreSongsButton").addClass("disabled");
     }
 
     function deleteSong(e) {
