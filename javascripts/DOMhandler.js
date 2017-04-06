@@ -7,3 +7,10 @@ document.addEventListener ("click", function(e) {
 		e.target.parentNode.remove();
 	}
 });
+
+document.addEventListener ("click", function(e) {
+	if (e.target.id === "loadMoreSongs") {
+		console.log("firing");
+		Songs.getNewSongArray2();
+	}
+});

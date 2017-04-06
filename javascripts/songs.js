@@ -7,16 +7,26 @@ var Songs = (function(oldSongs) {
     var songContainer = document.getElementById("right");
 
     var privateArrayOfSongs = [];
+    var privateArrayOfSongs2 = [];
+    var songsToWrite = "";
+    var songsToWrite2 = "";
+
 
     oldSongs.getNewSongArray = function(songsPassedFromSongIife) {
         privateArrayOfSongs.push(songsPassedFromSongIife)
-        console.log(privateArrayOfSongs);
         Songs.writeNewSongToArray(privateArrayOfSongs);
         return privateArrayOfSongs;
     }
 
+    oldSongs.getNewSongArray2 = function(songsPassedFromSongIife2) {
+    	console.log(songsPassedFromSongIife2);
+        privateArrayOfSongs2.push(songsPassedFromSongIife2)
+        console.log(privateArrayOfSongs2);
+        Songs.writeNewSongToArray2(privateArrayOfSongs2);
+        return privateArrayOfSongs2;
+    }
+
     oldSongs.writeNewSongToArray = function(getNewSongArray) {
-        console.log(getNewSongArray.length);
         songsToWrite = "";
         for (var i = 0; i < getNewSongArray.length; i++) {
             songsToWrite += `<div class="songs">`;
@@ -27,7 +37,23 @@ var Songs = (function(oldSongs) {
             songsToWrite += `</div>`;
         }
         songContainer.innerHTML = songsToWrite;
-		songContainer.innerHTML += `<button class="btn btn-default">Load More Songs</button>`;
+		songContainer.innerHTML += `<button id="loadMoreSongs" class="btn btn-default">Load More Songs</button>`;
+    }
+
+    oldSongs.writeNewSongToArray2 = function(getNewSongArray2) {
+        console.log(getNewSongArray2.length);
+        songsToWrite2 = "";
+        for (var i = 0; i < getNewSongArray2.length; i++) {
+            songsToWrite2 += `<div class="songs">`;
+            songsToWrite2 += `<div class="name">${getNewSongArray2[i].name} `
+            songsToWrite2 += `by the band ${getNewSongArray2[i].artist} `
+            songsToWrite2 += `on the album ${getNewSongArray2[i].album} </div>`
+            songsToWrite2 += `<button class="deleteButton btn btn-default">Delete</button>`;
+            songsToWrite2 += `</div>`;
+        }
+        songContainer.innerHTML = songsToWrite;
+        songContainer.innerHTML += songsToWrite2;
+        songContainer.innerHTML += `<button id="loadMoreSongs" class="btn btn-default">Load More Songs</button>`;
     }
 
     function deleteSong(e) {
@@ -36,17 +62,6 @@ var Songs = (function(oldSongs) {
         };
     };
 
-    // oldSongs.makeDeleteListener = function() {
-    // 	domDeleteListener();
-    // }
-
     return oldSongs;
 
 })(Songs || {});
-
-////////////////////// ADDING SONGS FROM PSEUDO-FORM ////////////////////////////
-
-// addSongButton.addEventListener("click", function(event) {
-//     songs.push(addSongTitle.value + " | " + addSongArtist.value + " | " + addSongAlbum.value);
-//     writeArray(songs);
-// });
