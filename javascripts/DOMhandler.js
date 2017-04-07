@@ -1,11 +1,12 @@
-document.addEventListener ("click", function(e) {
-	if (e.target.className.split(" ")[0] === "deleteButton") {
+$("body").click(function(e){
+	console.log(e)
+;	if (e.target.className.split(" ")[0] === "deleteButton") {
 		e.target.parentNode.remove();
 	}
 });
 
-document.addEventListener ("click", function(e) {
+$("body").click(function(e) {
 	if (e.target.id === "loadMoreSongs") {
-		Songs.execute2ndRequest();
+	Songs.execute2ndRequest();
 	}
 });
