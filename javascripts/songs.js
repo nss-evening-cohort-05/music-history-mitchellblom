@@ -10,11 +10,6 @@ var Songs = (function(oldSongs) {
     var songsToWrite = "";
     var songsToWrite2 = "";
 
-// Select element by Id: 			$("#right")
-// Select element by Class: 		$(".movielist")
-// Select element by Tag name: 		$("img")
-// Select element by Attribute: 	$("input[value=’Horror’]")
-
 
     oldSongs.getNewSongArray = function(songsPassedFromSongIife) {
         privateArrayOfSongs.push(songsPassedFromSongIife)
@@ -55,8 +50,7 @@ var Songs = (function(oldSongs) {
         songContainer.html(songsToWrite);
         songContainer.append(songsToWrite2);
         songContainer.append(`<button id="loadMoreSongs" class="btn btn-default">Load More Songs</button>`);
-        var loadMoreSongsButton = $("#loadMoreSongs");
-        $("loadMoreSongsButton").addClass("disabled");
+        $("#loadMoreSongs").addClass("disabled");
     }
 
     function deleteSong(e) {
