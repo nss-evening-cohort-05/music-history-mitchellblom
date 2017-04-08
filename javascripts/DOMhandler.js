@@ -5,7 +5,6 @@ $("body").click(function(e){
 });
 
 $("body").click(function(e) {
-	console.log(e.target.className);
 	if (e.target.id === "loadMoreSongs" && e.target.className !== "btn btn-default disabled") {
 	Songs.execute2ndRequest();
 	}

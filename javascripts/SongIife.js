@@ -9,7 +9,7 @@ var Songs = (function(oldSongs) {
         }).done(function(data2) {
             Songs.getNewSongArray2(data2)
         }).fail(function(error) {
-            console.log("error");
+            // console.log("error");
         });
     }
 
@@ -22,7 +22,7 @@ var Songs = (function(oldSongs) {
     }).done(function(data) {
         Songs.getNewSongArray(data)
     }).fail(function(error) {
-        console.log("error");
+        // console.log("error");
     });
 
     return oldSongs;
