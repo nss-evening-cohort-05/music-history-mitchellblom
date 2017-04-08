@@ -45,12 +45,11 @@ var Songs = (function(oldSongs) {
             songsToWrite2 += `<button class="deleteButton btn btn-default">Delete</button>`;
             songsToWrite2 += `</div>`;
         }
-        songContainer.html(songsToWrite);
         songContainer.append(songsToWrite2);
+        $("#loadMoreSongs").remove();
         songContainer.append(`<button id="loadMoreSongs" class="btn btn-default">Load More Songs</button>`);
         $("#loadMoreSongs").addClass("disabled");
-    }
-
+}
     function deleteSong(e) {
         if (e.target.className === "deleteButton") {
             e.target.parentElement = "";

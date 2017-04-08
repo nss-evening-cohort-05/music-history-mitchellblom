@@ -5,11 +5,11 @@ var Songs = (function(oldSongs) {
 
     oldSongs.execute2ndRequest = function() {
         $.ajax({
-        url: ["songs2.json"]
+            url: ["songs2.json"]
         }).done(function(data2) {
-        Songs.getNewSongArray2(data2)
+            Songs.getNewSongArray2(data2)
         }).fail(function(error) {
-        console.log("error");
+            console.log("error");
         });
     }
 
@@ -19,9 +19,9 @@ var Songs = (function(oldSongs) {
 
     $.ajax({
         url: ["songs1.json"]
-        }).done(function(data) {
+    }).done(function(data) {
         Songs.getNewSongArray(data)
-        }).fail(function(error) {
+    }).fail(function(error) {
         console.log("error");
     });
 
