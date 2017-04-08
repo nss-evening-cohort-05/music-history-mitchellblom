@@ -1,5 +1,4 @@
 $("body").click(function(e){
-	console.log(e)
 ;	if (e.target.className.split(" ")[0] === "deleteButton") {
 		e.target.parentNode.remove();
 	}

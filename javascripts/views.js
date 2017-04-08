@@ -6,7 +6,7 @@ var addLink = document.getElementById("link-add");
 var listDiv = document.getElementById("list-view");
 var addDiv = document.getElementById("add-view");
 
-listLink.addEventListener("click", function(event) {
+$("#link-list").click(function(e) {
   addDiv.classList.add("hidden");
   addDiv.classList.remove("visible");
   listDiv.classList.add("visible");
@@ -15,7 +15,7 @@ listLink.addEventListener("click", function(event) {
   listLink.classList.add("active");
 });
 
-addLink.addEventListener("click", function(event) {
+$("#link-add").click(function(e) {
   listDiv.classList.add("hidden");
   listDiv.classList.remove("visible");
   addDiv.classList.add("visible");
