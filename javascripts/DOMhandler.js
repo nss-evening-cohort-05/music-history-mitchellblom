@@ -1,11 +1,11 @@
-document.addEventListener ("click", function(e) {
-	if (e.target.className.split(" ")[0] === "deleteButton") {
+$("body").click(function(e){
+;	if (e.target.className.split(" ")[0] === "deleteButton") {
 		e.target.parentNode.remove();
 	}
 });
 
-document.addEventListener ("click", function(e) {
-	if (e.target.id === "loadMoreSongs") {
-		Songs.execute2ndRequest();
+$("body").click(function(e) {
+	if (e.target.id === "loadMoreSongs" && e.target.className !== "btn btn-default disabled") {
+	Songs.execute2ndRequest();
 	}
 });

@@ -1,16 +1,11 @@
 var Songs = (function(oldSongs) {
 
-    var addSongButton = document.getElementById("clickToAddSong");
-    var addSongTitle = document.getElementById("addTitleField");
-    var addSongArtist = document.getElementById("addArtistField");
-    var addSongAlbum = document.getElementById("addAlbumField");
-    var songContainer = document.getElementById("right");
+    var songContainer = $("#right");
 
     var privateArrayOfSongs = [];
     var privateArrayOfSongs2 = [];
     var songsToWrite = "";
     var songsToWrite2 = "";
-
 
     oldSongs.getNewSongArray = function(songsPassedFromSongIife) {
         privateArrayOfSongs.push(songsPassedFromSongIife)
@@ -25,36 +20,36 @@ var Songs = (function(oldSongs) {
     }
 
     oldSongs.writeNewSongToArray = function(getNewSongArray) {
+        var array = getNewSongArray[0].songs
         songsToWrite = "";
-        for (var i = 0; i < getNewSongArray.length; i++) {
+        for (var i = 0; i < array.length; i++) {
             songsToWrite += `<div class="songs">`;
-            songsToWrite += `<div class="name"><i>${getNewSongArray[i].name}</i> `
-            songsToWrite += `by the artist <i>${getNewSongArray[i].artist}</i> `
-            songsToWrite += `on the album <i>${getNewSongArray[i].album}</i> </div>`
+            songsToWrite += `<div class="name"><i>${array[i].name}</i> `
+            songsToWrite += `by the artist <i>${array[i].artist}</i> `
+            songsToWrite += `on the album <i>${array[i].album}</i> </div>`
             songsToWrite += `<button class="deleteButton btn btn-default">Delete</button>`;
             songsToWrite += `</div>`;
         }
-        songContainer.innerHTML = songsToWrite;
-        songContainer.innerHTML += `<button id="loadMoreSongs" class="btn btn-default">Load More Songs</button>`;
+        songContainer.html(songsToWrite);
+        songContainer.append(`<button id="loadMoreSongs" class="btn btn-default">Load More Songs</button>`);
     }
 
     oldSongs.writeNewSongToArray2 = function(getNewSongArray2) {
+        var array = getNewSongArray2[0].songs
         songsToWrite2 = "";
-        for (var i = 0; i < getNewSongArray2.length; i++) {
+        for (var i = 0; i < array.length; i++) {
             songsToWrite2 += `<div class="songs">`;
-            songsToWrite2 += `<div class="name"><i>${getNewSongArray2[i].name}</i> `
-            songsToWrite2 += `by the artist <i>${getNewSongArray2[i].artist}</i> `
-            songsToWrite2 += `on the album <i>${getNewSongArray2[i].album}</i> </div>`
+            songsToWrite2 += `<div class="name"><i>${array[i].name}</i> `
+            songsToWrite2 += `by the artist <i>${array[i].artist}</i> `
+            songsToWrite2 += `on the album <i>${array[i].album}</i> </div>`
             songsToWrite2 += `<button class="deleteButton btn btn-default">Delete</button>`;
             songsToWrite2 += `</div>`;
         }
-        songContainer.innerHTML = songsToWrite;
-        songContainer.innerHTML += songsToWrite2;
-        songContainer.innerHTML += `<button id="loadMoreSongs" class="btn btn-default">Load More Songs</button>`;
-        var loadMoreSongsButton = document.getElementById("loadMoreSongs");
-        loadMoreSongsButton.classList.add("disabled"); 
-    }
-
+        songContainer.append(songsToWrite2);
+        $("#loadMoreSongs").remove();
+        songContainer.append(`<button id="loadMoreSongs" class="btn btn-default">Load More Songs</button>`);
+        $("#loadMoreSongs").addClass("disabled");
+}
     function deleteSong(e) {
         if (e.target.className === "deleteButton") {
             e.target.parentElement = "";
