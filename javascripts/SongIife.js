@@ -1,30 +1,30 @@
-var Songs = (function(oldSongs) {
+// var Songs = (function(oldSongs) {
 
-    var data;
-    var data2;
+//     var data;
+//     var data2;
 
-    oldSongs.execute2ndRequest = function() {
-        $.ajax({
-            url: ["songs2.json"]
-        }).done(function(data2) {
-            Songs.getNewSongArray2(data2)
-        }).fail(function(error) {
-            // console.log("error");
-        });
-    }
+//     oldSongs.execute2ndRequest = function() {
+//         $.ajax({
+//             url: ["songs2.json"]
+//         }).done(function(data2) {
+//             Songs.getNewSongArray2(data2)
+//         }).fail(function(error) {
+//             // console.log("error");
+//         });
+//     }
 
-    function fileFailed() {
-        alert("Request Timed Out");
-    }
+//     function fileFailed() {
+//         alert("Request Timed Out");
+//     }
 
-    $.ajax({
-        url: ["songs1.json"]
-    }).done(function(data) {
-        Songs.getNewSongArray(data)
-    }).fail(function(error) {
-        // console.log("error");
-    });
+//     $.ajax({
+//         url: ["songs1.json"]
+//     }).done(function(data) {
+//         Songs.getNewSongArray(data)
+//     }).fail(function(error) {
+//         // console.log("error");
+//     });
 
-    return oldSongs;
+//     return oldSongs;
 
-})(Songs || {});
+// })(Songs || {});
