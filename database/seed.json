@@ -1,0 +1,44 @@
+{
+  "songs": [
+    {
+      "name": "Mad Man",
+      "artist": "Haste the Day",
+      "album": "Dreamer"
+    },
+    {
+      "name": "Lighten Up",
+      "artist": "Code Machine",
+      "album": "Code Machine"
+    },
+    {
+      "name": "Back to Back",
+      "artist": "Dustin Kensrue",
+      "album": "Carry the Fire"
+    },
+    {
+      "name": "The Grand Illusion",
+      "artist": "Styx",
+      "album": "The Grand Illusion"
+    },
+    {
+      "name": "Vacancy",
+      "artist": "As I Lay Dying",
+      "album": "The Powerless Rise"
+    },
+    {
+      "name": "Reinventing Your Exit",
+      "artist": "Underoath",
+      "album": "They're Only Chasing Safety"
+    },
+    {
+      "name": "Atlantic",
+      "artist": "Thrice",
+      "album": "Vheissu"
+    },
+    {
+      "name": "Clipping",
+      "artist": "Mutemath",
+      "album": "Armistice"
+    }
+  ]
+}
