@@ -1,44 +1,52 @@
 {
-  "songs": [
-    {
+  "songs": {
+    "song0": {
       "name": "Mad Man",
       "artist": "Haste the Day",
-      "album": "Dreamer"
+      "album": "Dreamer",
+      "genre": "Hardcore"
     },
-    {
+    "song1": {
       "name": "Lighten Up",
       "artist": "Code Machine",
-      "album": "Code Machine"
+      "album": "Code Machine",
+      "genre": "Indie"
     },
-    {
+    "song2": {
       "name": "Back to Back",
       "artist": "Dustin Kensrue",
-      "album": "Carry the Fire"
+      "album": "Carry the Fire",
+      "genre": "Acoustic"
     },
-    {
+    "song3": {
       "name": "The Grand Illusion",
       "artist": "Styx",
-      "album": "The Grand Illusion"
+      "album": "The Grand Illusion",
+      "genre": "Classic Rock"
     },
-    {
+    "song4": {
       "name": "Vacancy",
       "artist": "As I Lay Dying",
-      "album": "The Powerless Rise"
+      "album": "The Powerless Rise",
+      "genre": "Metal"
     },
-    {
+    "song5": {
       "name": "Reinventing Your Exit",
       "artist": "Underoath",
-      "album": "They're Only Chasing Safety"
+      "album": "They're Only Chasing Safety",
+      "genre": "Hardcore"
     },
-    {
+    "song6": {
       "name": "Atlantic",
       "artist": "Thrice",
-      "album": "Vheissu"
+      "album": "Vheissu",
+      "genre": "Alternative"
     },
-    {
+    "song7": {
       "name": "Clipping",
       "artist": "Mutemath",
-      "album": "Armistice"
+      "album": "Armistice",
+      "genre": "Rock"
     }
-  ]
+  }
 }

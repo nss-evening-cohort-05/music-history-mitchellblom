@@ -18,9 +18,21 @@ app.factory("ItemFactory", function($http, $q, FIREBASE_CONFIG) {
 		});
 	};
 
-	  return {
-      getSongsFromFb:getSongsFromFb
+	let getSingleSong = (id) => {
+    return $q((resolve, reject) => {
+       $http.get(`${FIREBASE_CONFIG.databaseURL}/songs/${id}.json`)
+        .then((results) => {
+          results.data.id = id;
+          resolve(results);
+        }).catch((error) => {
+          reject(error);
+        });
+    });
+  };
 
+	return {
+    getSongsFromFb:getSongsFromFb,
+    getSingleSong:getSingleSong
   };
 
 });
