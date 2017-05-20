@@ -11,9 +11,16 @@
     </select>
   <label for="genre">Genre:</label>
   <div class="genres">
-      <input type="checkbox" name="genre" value=""> Rock <br>
+      <input type="checkbox" name="genre" value="">Rock<br>
   </div>
   <div class="genres">
-      <input type="checkbox" name="genre" class="value=""> Classical <br>
+      <input type="checkbox" name="genre" class="value="">Classical<br>
   </div>
+</div>
+
+<div class="contactInListView" ng-repeat="song in songs">
+  <ul class="row">
+    <div class="col-sm-6"><a ng-href="#!/addy/view/{{song.id}}">{{song.name}}</a> by {{song.artist}} on the album {{song.album}}</div>
+    <div class="col-sm-1"><button class="btn btn-danger" ng-click="deleteContactPressed(song.id)">x</button></div>
+  </ul>
 </div>

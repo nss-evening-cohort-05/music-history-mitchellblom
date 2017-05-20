@@ -1,6 +1,6 @@
 app.run(function(FIREBASE_CONFIG) {
 	firebase.initializeApp(FIREBASE_CONFIG); 
-});																							// config runs once, run runs when any controller changes
+});
 
 app.config(function($routeProvider){
     $routeProvider
