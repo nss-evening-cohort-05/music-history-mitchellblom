@@ -2,7 +2,7 @@
 
 body {
 	font-family: arial, sans-serif;
-	width: 90%;
+	/*width: 90%;*/
 	margin: 3% 5%;
 }
 
@@ -26,7 +26,7 @@ li.topLink {
 /*	white-space: nowrap;
 	overflow: auto;*/
 }
-
+/*
 a.active {
 	color: black;
 	text-decoration: none;
@@ -34,7 +34,7 @@ a.active {
 	font-weight: bold;
  }
 
-
+*/
 /******************** LIST VIEW BOTH LOWER SPANS ******************************/
 
 .containers {
@@ -42,6 +42,7 @@ a.active {
 	flex-flow: row nowrap;
 	justify-content: space-between;
 }
+
 label {
 	display: block;
 }
@@ -115,13 +116,13 @@ h2 {
 	padding: 25px;
 }
 
-button.bigger {
+/*button.bigger {
 	max-width: 150%;
 	font-size: 1.1em;
 	border-radius: 10%;
 	border: 2px solid black;
 }
-
+*/
 /******************** ADD VIEW **********************************/
 
 
