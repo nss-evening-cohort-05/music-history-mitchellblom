@@ -4,72 +4,12 @@
     <meta charset="utf-8">
     <title>Music History</title>
     <link rel="stylesheet" type="text/css" href="./lib/bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
   </head>
   <body>
 
-<!--//////////////////////////////////////// LINKS ///////////////////////////////////////////////-->
-
-    <ul id="top">
-      <li class="topLink"><a href="#" id="link-list" class="active">List Music</a></li> |
-      <li class="topLink"><a href="#" id="link-add">Add Music</a></li>
-    </ul>
-
-<!--//////////////////////////////////////// LIST VIEW ///////////////////////////////////////////////-->
-
-    <div class="containers visible" id="list-view">       
-      <div id="left">
-          <label for="songlength">Song length:</label>
-            <input type="range" value="50%" class="wider">
-          <label for="artist">Artist:</label>
-          <select name="artist" class="wider">
-            <option value="">Options</option>
-            <option value="">Another Option</option>
-            <option value="">Yet Another</option>
-          </select>
-          <label for="album">Album:</label>
-          <select name="album" class="wider">
-            <option value="">Options</option>
-            <option value="">Another Option</option>
-            <option value="">Yet Another</option>
-          </select>
-        <label for="genre">Genre:</label>
-        <div class="genres">
-            <input type="checkbox" name="genre" value=""> Rock <br>
-            <input type="checkbox" name="genre" value=""> Pop <br>
-            <input type="checkbox" name="genre" value=""> Blues <br>
-        </div>
-        <div class="genres">
-            <input type="checkbox" name="genre" class="value=""> Classical <br>
-            <input type="checkbox" name="genre" value=""> Jazz <br>
-            <input type="checkbox" name="genre" value=""> Hip Hop <br>
-        </div>
-       <div class="buttonWrap">
-            <button class="bigger" align="center">Filter</button>
-        </div>
-      </div>
-
-      <div id="right">
-        <!-- Songs get written here -->
-      </div>
-
-    </div>
-
-<!--//////////////////////////////////////// ADD VIEW ///////////////////////////////////////////////-->
-
-    <div class="hidden" id="add-view">
-       <div class="addMusic">
-         <label for="songName">Song Name:</label>
-         <input type="text" id="addTitleField"></input>
-         <label for="artist">Artist:</label>
-         <input type="text" id="addArtistField"></input>
-         <label for="album">Album:</label>
-         <input type="text" id="addAlbumField"></input>
-       </div>
-       <div class="buttonWrap">
-          <button id="clickToAddSong" class="addSong bigger" align="center">Add</button>
-      </div>
-    </div>
+    <div ng-include="'partials/navbar.html'"></div> 
+    <div class="col-xs-8 col-xs-offset-2" ng-view></div>
 
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <script type="text/javascript" src="./lib/bower_components/jquery/dist/jquery.js"></script>
@@ -81,18 +21,13 @@
     <script type="text/javascript" src="./javascripts/AppConfig.js"></script>
     <script type="text/javascript" src="./javascripts/AppConstants.js"></script>
 
-    <!-- <script type="text/javascript" src="./javascripts/factories/AddyFactory.js"></script> -->
-<!-- 
-    <script type="text/javascript" src="./javascripts/controllers/AddyEditCtrl.js"></script>
-    <script type="text/javascript" src="./javascripts/controllers/AddyListCtrl.js"></script>
-    <script type="text/javascript" src="./javascripts/controllers/AddyNewCtrl.js"></script>
-    <script type="text/javascript" src="./javascripts/controllers/AddyViewCtrl.js"></script>
-    <script type="text/javascript" src="./javascripts/controllers/NavCtrl.js"></script> -->
+    <script type="text/javascript" src="./javascripts/factories/ItemFactory.js"></script>
 
-<script type="text/javascript" src="javascripts/views.js"></script>
-<script type="text/javascript" src="javascripts/songs.js"></script>
-<script type="text/javascript" src="javascripts/SongIife.js"></script>
-<script type="text/javascript" src="javascripts/DOMhandler.js"></script>
+    <script type="text/javascript" src="./javascripts/controllers/ItemEditCtrl.js"></script>
+    <script type="text/javascript" src="./javascripts/controllers/ItemListCtrl.js"></script>
+    <script type="text/javascript" src="./javascripts/controllers/ItemNewCtrl.js"></script>
+    <script type="text/javascript" src="./javascripts/controllers/ItemViewCtrl.js"></script>
+    <script type="text/javascript" src="./javascripts/controllers/NavCtrl.js"></script>
 
   </body>
 

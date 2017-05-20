@@ -1,0 +1,134 @@
+/******************** GLOBAL *************************************/
+
+body {
+	font-family: arial, sans-serif;
+	width: 90%;
+	margin: 3% 5%;
+}
+
+
+/********************* NAV BAR TOP LIGHT RED *********************/
+
+/* making bar span 90% of page */
+ul#top {
+	display: block;
+	max-height: 60px;
+	background-color: #FFB4B0;
+	border: 3px solid black;
+}
+
+li.topLink {
+	display: inline-flex;
+	list-style: none;
+	color: #4DD7FA;
+	margin: 3% 0;
+	padding: auto 0;
+/*	white-space: nowrap;
+	overflow: auto;*/
+}
+
+a.active {
+	color: black;
+	text-decoration: none;
+	margin: auto;
+	font-weight: bold;
+ }
+
+
+/******************** LIST VIEW BOTH LOWER SPANS ******************************/
+
+.containers {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+label {
+	display: block;
+}
+
+div {
+	display: inline-block;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+
+/******************** LIST VIEW LEFT SPAN ******************************/
+
+div#left {				
+	min-height: 200px;
+	border: 3px solid black;
+	background-color: #4DD7FA;
+	margin-right: 2%;
+	padding: 2%;
+	flex: 1;  
+}
+
+div#left * {				
+ 	margin: 3% 2%;
+}
+
+div#left select {	
+	font-size: 1.03em;
+}
+
+.wider {
+	width: 90%;
+}
+
+/******************** LIST VIEW RIGHT SPAN ******************************/
+
+div#right {
+	min-height: 200px;
+	border: 3px solid black;
+	background-color: #FEFAC0;
+	flex: 3;
+}
+
+div#right ul {
+	padding: 0 2% 1.5% 6%;
+}
+
+div#right li {
+	display: inline-block;
+	list-style: none;
+	margin: auto 2% auto 0;
+}
+
+h2 {
+	color: #785616;
+	font-weight: 400;
+	padding-left: 6%;
+}
+
+.genres {
+	display: inline-block;
+}
+
+.songs {
+	display: block;
+}
+
+/******************** BUTTONS ***********************************/
+
+.buttonWrap {
+	padding: 25px;
+}
+
+button.bigger {
+	max-width: 150%;
+	font-size: 1.1em;
+	border-radius: 10%;
+	border: 2px solid black;
+}
+
+/******************** ADD VIEW **********************************/
+
+
+
+/******************** VIEW TOGGLE ******************************/
+
+.hidden {
+  display: none;
+}
+
