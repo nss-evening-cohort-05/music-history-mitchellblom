@@ -1,11 +1,13 @@
 <div class="addMusic">
          <label for="songName">Song Name:</label>
-         <input type="text" id="addTitleField"></input>
+         <input type="text" ng-model="newSong.name"></input>
          <label for="artist">Artist:</label>
-         <input type="text" id="addArtistField"></input>
+         <input type="text" ng-model="newSong.artist"></input>
          <label for="album">Album:</label>
-         <input type="text" id="addAlbumField"></input>
+         <input type="text" ng-model="newSong.album"></input>
+         <label for="album">Genre:</label>
+         <input type="text" ng-model="newSong.genre"></input>
        </div>
        <div class="buttonWrap">
-          <button id="clickToAddSong" class="addSong bigger" align="center">Add</button>
+          <button id="clickToAddSong" class="addSong bigger" align="center">Submit</button>
       </div>

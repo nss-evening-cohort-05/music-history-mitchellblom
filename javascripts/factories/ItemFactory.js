@@ -30,9 +30,40 @@ app.factory("ItemFactory", function($http, $q, FIREBASE_CONFIG) {
     });
   };
 
+  let editSong = (item) => {
+    return $q((resolve, reject) => {
+      $http.put(`${FIREBASE_CONFIG.databaseURL}/songs/${item.id}.json`, 
+        JSON.stringify({
+        	name: item.name,
+        	artist: item.artist,
+          album: item.album,
+          genre: item.genre
+        })
+    	)
+      	.then((results) => {
+              resolve(results);
+          }).catch((error) => {
+              reject(error);
+          });
+        });
+  };
+
+  let postNewSong = (newSong) => {
+    return $q((resolve, reject) => {
+      $http.post(`${FIREBASE_CONFIG.databaseURL}/songs.json`, JSON.stringify(newSong))
+        .then((results) => {
+            resolve(results);
+        }).catch((error) => {
+            reject(error);
+        });
+    });
+  };
+
 	return {
     getSongsFromFb:getSongsFromFb,
-    getSingleSong:getSingleSong
+    getSingleSong:getSingleSong,
+    editSong:editSong,
+    postNewSong:postNewSong
   };
 
 });

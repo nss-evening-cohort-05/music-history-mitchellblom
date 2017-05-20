@@ -1,23 +1,3 @@
-<div>
-<!--     <label for="songlength">Song length:</label>
-      <input type="range" value="50%" class="wider">
-    <label for="artist">Artist:</label>
-    <select name="artist" class="wider">
-      <option value="">Options</option>
-    </select>
-    <label for="album">Album:</label>
-    <select name="album" class="wider">
-      <option value="">Options</option>
-    </select>
-  <label for="genre">Genre:</label>
-  <div class="genres">
-      <input type="checkbox" name="genre" value="">Rock<br>
-  </div>
-  <div class="genres">
-      <input type="checkbox" name="genre" class="value="">Classical<br>
-  </div> -->
-</div>
-
 <div class="contactInListView" ng-repeat="song in songs">
   <ul class="row">
     <div class="col-sm-6"><a ng-href="#!/item/view/{{song.id}}">{{song.name}}</a> by {{song.artist}} on the album {{song.album}}</div>
