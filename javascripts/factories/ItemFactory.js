@@ -1,11 +1,11 @@
 app.factory("ItemFactory", function($http, $q, FIREBASE_CONFIG) {
 
-	let getSongsFromFb = () => {
+	let getSongsFromFb = (userId) => {
 		let songs = [];
 		return $q((resolve, reject) => {
-			$http.get(`${FIREBASE_CONFIG.databaseURL}/songs.json`)
-				.then((fbAddys) => {
-					var songCollection = fbAddys.data;
+			$http.get(`${FIREBASE_CONFIG.databaseURL}/songs.json?orderBy="uid"&equalTo="${userId}"`) // 
+				.then((fbSongs) => {
+					var songCollection = fbSongs.data;
 					Object.keys(songCollection).forEach((key) => {
 						songCollection[key].id = key;
 						songs.push(songCollection[key]);

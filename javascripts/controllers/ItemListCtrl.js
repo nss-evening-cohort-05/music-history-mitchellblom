@@ -1,9 +1,9 @@
-app.controller("ItemListCtrl", function($scope, ItemFactory) {	
+app.controller("ItemListCtrl", function($rootScope, $scope, ItemFactory) {	
 
 	$scope.songs = [];
 
 	let getSongsThenWriteToDom = () => {
-		ItemFactory.getSongsFromFb().then((songs) => {
+		ItemFactory.getSongsFromFb($rootScope.user.uid).then((songs) => {
 			$scope.songs = songs;
 		}).catch((error) => {
 			console.log(error);
