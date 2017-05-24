@@ -4,49 +4,67 @@
       "name": "Mad Man",
       "artist": "Haste the Day",
       "album": "Dreamer",
-      "genre": "Hardcore"
+      "genre": "Hardcore",
+      "uid" : "RVYmQNdBR7Z8MLlAcwhbJxJoNMm1"
     },
     "song1": {
       "name": "Lighten Up",
       "artist": "Code Machine",
       "album": "Code Machine",
-      "genre": "Indie"
+      "genre": "Indie",
+      "uid" : "mxUBZJMitPUguGBIrxMDcnRtHVv1"
     },
     "song2": {
       "name": "Back to Back",
       "artist": "Dustin Kensrue",
       "album": "Carry the Fire",
-      "genre": "Acoustic"
+      "genre": "Acoustic",
+      "uid" : "RVYmQNdBR7Z8MLlAcwhbJxJoNMm1"
     },
     "song3": {
       "name": "The Grand Illusion",
       "artist": "Styx",
       "album": "The Grand Illusion",
-      "genre": "Classic Rock"
+      "genre": "Classic Rock",
+      "uid" : "mxUBZJMitPUguGBIrxMDcnRtHVv1"
     },
     "song4": {
       "name": "Vacancy",
       "artist": "As I Lay Dying",
       "album": "The Powerless Rise",
-      "genre": "Metal"
+      "genre": "Metal",
+      "uid" : "RVYmQNdBR7Z8MLlAcwhbJxJoNMm1"
     },
     "song5": {
       "name": "Reinventing Your Exit",
       "artist": "Underoath",
       "album": "They're Only Chasing Safety",
-      "genre": "Hardcore"
+      "genre": "Hardcore",
+      "uid" : "mxUBZJMitPUguGBIrxMDcnRtHVv1"
     },
     "song6": {
       "name": "Atlantic",
       "artist": "Thrice",
       "album": "Vheissu",
-      "genre": "Alternative"
+      "genre": "Alternative",
+      "uid" : "RVYmQNdBR7Z8MLlAcwhbJxJoNMm1"
     },
     "song7": {
       "name": "Clipping",
       "artist": "Mutemath",
       "album": "Armistice",
-      "genre": "Rock"
+      "genre": "Rock",
+      "uid" : "mxUBZJMitPUguGBIrxMDcnRtHVv1"
+    }
+  },
+  "users" : {
+    "user0" : {
+      "uid" : "mxUBZJMitPUguGBIrxMDcnRtHVv1",
+      "username" : "a"
+    },
+    "user1" : {
+      "uid" : "RVYmQNdBR7Z8MLlAcwhbJxJoNMm1",
+      "username" : "b"
     }
   }
 }
