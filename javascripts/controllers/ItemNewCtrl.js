@@ -1,6 +1,8 @@
-app.controller("ItemNewCtrl", function($http, $location, $q, $scope, FIREBASE_CONFIG, ItemFactory){
+app.controller("ItemNewCtrl", function($http, $location, $q, $rootScope, $scope, FIREBASE_CONFIG, ItemFactory){
 
 	$scope.addNewSong = () => {
+		$scope.newSong.uid = $rootScope.user.uid;
+		console.log($scope.newSong.uid);
 		ItemFactory.postNewSong($scope.newSong).then(() => {
 			$scope.newContact = {};
 			$location.url("/item/list");

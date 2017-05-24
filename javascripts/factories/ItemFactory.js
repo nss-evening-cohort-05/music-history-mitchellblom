@@ -37,7 +37,8 @@ app.factory("ItemFactory", function($http, $q, FIREBASE_CONFIG) {
         	name: item.name,
         	artist: item.artist,
           album: item.album,
-          genre: item.genre
+          genre: item.genre,
+          uid: item.uid
         })
     	)
       	.then((results) => {
