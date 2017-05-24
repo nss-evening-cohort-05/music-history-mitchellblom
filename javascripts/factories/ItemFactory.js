@@ -59,11 +59,23 @@ app.factory("ItemFactory", function($http, $q, FIREBASE_CONFIG) {
     });
   };
 
+  let deleteSong = (songId) => {
+    return $q((resolve, reject) => {
+      $http.delete(`${FIREBASE_CONFIG.databaseURL}/songs/${songId}.json`)
+        .then((results) => {
+              resolve(results);
+          }).catch((error) => {
+              reject(error);
+          });
+    });
+  };
+
 	return {
     getSongsFromFb:getSongsFromFb,
     getSingleSong:getSingleSong,
     editSong:editSong,
-    postNewSong:postNewSong
+    postNewSong:postNewSong,
+    deleteSong:deleteSong
   };
 
 });

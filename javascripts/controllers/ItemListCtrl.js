@@ -12,13 +12,12 @@ app.controller("ItemListCtrl", function($scope, ItemFactory) {
 
 	getSongsThenWriteToDom();
 
-	// $scope.deleteContactPressed = (id) => {
-	// 	console.log("delete pressed");
-	// 	AddyFactory.deleteContact(id).then(() => {
-	// 		getSongsThenWriteToDom();
-	// 	}).catch((error) => {
-	// 		console.log(error);
-	// 	});
-	// };
+	$scope.deleteSongPressed = (id) => {
+		ItemFactory.deleteSong(id).then(() => {
+			getSongsThenWriteToDom();
+		}).catch((error) => {
+			console.log(error);
+		});
+	};
 
 });
