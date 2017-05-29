@@ -3,3 +3,15 @@ body {
 
 .navbar-brand {
   font-family: 'Cutive', serif; }
+
+.songInListView {
+  color: white;
+  font-size: 1.1em;
+  padding: 4%;
+  background-color: black;
+  box-shadow: 0 0 30px white;
+  border-radius: 5px; }
+
+.authButton {
+  background-color: black;
+  color: gray; }

@@ -1,6 +1,11 @@
 <div ng-repeat="song in songs">
-  <ul class="row">
-    <div class="col-sm-6"><a ng-href="#!/item/view/{{song.id}}">{{song.name}}</a> by {{song.artist}} on the album {{song.album}}</div>
+  <ul class="row songInListView">
+    <div class="col-sm-3">
+      <a href="#" class="thumbnail">
+       <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Underoath-Theyre_Only_Chasing_Safety.jpg/220px-Underoath-Theyre_Only_Chasing_Safety.jpg" alt="{{song.album}} artwork">
+      </a>
+    </div>
+    <div class="col-sm-8"><a ng-href="#!/item/view/{{song.id}}">{{song.name}}</a> by {{song.artist}} on the album {{song.album}}</div>
     <div class="col-sm-1"><button class="btn btn-danger" ng-click="deleteSongPressed(song.id)">x</button></div>
   </ul>
 </div>
