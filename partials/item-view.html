@@ -1,8 +1,11 @@
-<ul>
-	<img class="view-artwork" src="{{selectedSong.cover}}" alt="{{selectedSong.album}} artwork">
-	<li>Song: {{selectedSong.name}}</li>
-	<li>Artist: {{selectedSong.artist}}</li>
-	<li>Album: {{selectedSong.album}}</li>
-	<li>Genre: {{selectedSong.genre}}</li>
-</ul>
-<button class="btn btn-default"><a ng-href="#!/item/edit/{{selectedSong.id}}">Edit</a></button>
+
+<div class="box-style songInSingleView">
+	<img class="view-artwork col-sm-4" src="{{selectedSong.cover}}" alt="{{selectedSong.album}} artwork">
+	<ul col-sm-8>
+		<li>Song: {{selectedSong.name}}</li>
+		<li>Artist: {{selectedSong.artist}}</li>
+		<li>Album: {{selectedSong.album}}</li>
+		<li>Genre: {{selectedSong.genre}}</li>
+		<button class="btn btn-default"><a ng-href="#!/item/edit/{{selectedSong.id}}">Edit</a></button>
+	</ul>
+</div>

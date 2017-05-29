@@ -10,9 +10,16 @@ h1 {
   font-family: 'Cutive', serif; }
 
 .songInListView {
-  color: white;
   font-size: 1.1em;
-  padding: 3%;
+  padding: 3%; }
+
+.songInSingleView {
+  font-size: 2em;
+  padding: 5%;
+  height: 450px; }
+
+.box-style {
+  color: white;
   background-color: black;
   box-shadow: 0 0 30px white;
   border-radius: 5px; }
@@ -33,5 +40,6 @@ h1 {
   font-size: 2em; }
 
 .view-artwork {
-  height: 300px;
-  width: 300px; }
+  height: 275px;
+  width: 275px;
+  margin: 20px; }
