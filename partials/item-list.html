@@ -4,14 +4,10 @@
        <img class="thumbnail" src="{{song.cover}}" alt="{{song.album}} artwork">
     </div>
     <div class="col-sm-8 songInfo">
-        <div class="fa fa-music"><a ng-href="#!/item/view/{{song.id}}"> {{song.name}}</a></div><br>
-        <div class="fa fa-microphone"> {{song.artist}}</div><br>
-        <div class="fa fa-circle"> {{song.album}}</div><br>
+        <div class="fa fa-music"></div><a ng-href="#!/item/view/{{song.id}}">{{song.name}}</a><br>
+        <div class="fa fa-microphone"></div>{{song.artist}}<br>
+        <div class="fa fa-circle"></div>{{song.album}}<br>
     </div>
     <div class="col-sm-1"><a class="fa fa-trash-o deleteIcon" aria-hidden="true" ng-click="deleteSongPressed(song.id)"></a></div>
   </ul>
 </div>
-
-
-
-<div></div>

@@ -1,5 +1,6 @@
 body {
 	background: url("http://hdwallpaperia.com/wp-content/uploads/2013/11/Record-Store-Photo.jpg");
+	font-family: 'Oswald', arial, sans-serif;
 }
 
 h1 {
@@ -10,6 +11,21 @@ h1 {
 
 .header-font {
 	font-family: 'Cutive', serif;
+}
+
+.box-style {
+	color: white;
+	background-color: black;
+	box-shadow: 0 0 30px white;
+	border-radius: 5px;
+	input {
+		color: black;
+	}
+}
+
+.authButton {
+	background-color: black;
+	color: gray;
 }
 
 .songInListView {
@@ -23,16 +39,14 @@ h1 {
 	height: 450px;
 }
 
-.box-style {
-	color: white;
-	background-color: black;
-	box-shadow: 0 0 30px white;
-	border-radius: 5px;
-}
-
-.authButton {
-	background-color: black;
-	color: gray;
+.songInEditView {
+	font-size: 2em;
+	padding: 5%;
+	height: 550px;
+	width: 50%;
+	input {
+		display: block;
+	}
 }
 
 .thumbnail {
@@ -42,7 +56,7 @@ h1 {
 
 .deleteIcon {
 	color: red;
-	font-size: 3em;
+	font-size: 1.3em;
 }
 
 .songInfo {
@@ -50,7 +64,11 @@ h1 {
 }
 
 .view-artwork {
-	height: 275px;
-	width: 275px;
-	margin: 20px;
+	height: 300px;
+	width: 300px;
+	margin-right: 70px;
+}
+
+.fa {
+	margin-right: 20px;
 }
