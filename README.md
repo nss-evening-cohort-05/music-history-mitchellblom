@@ -1,15 +1,26 @@
-# NSS Music History Part 5
+# NSS Music History Project - Angular Edition
 
-![Splashpage](https://raw.githubusercontent.com/nss-evening-cohort-05/music-history-mitchellblom/part4/mh4.png)
+![Splashpage](https://raw.githubusercontent.com/nss-evening-cohort-05/music-history-mitchellblom/partAng/screenshots/mh1.png)
+<br>
+![Splashpage](https://raw.githubusercontent.com/nss-evening-cohort-05/music-history-mitchellblom/partAng/screenshots/mh2.png)
+<br>
+![Splashpage](https://raw.githubusercontent.com/nss-evening-cohort-05/music-history-mitchellblom/partAng/screenshots/mh3.png)
+<br>
+![Splashpage](https://raw.githubusercontent.com/nss-evening-cohort-05/music-history-mitchellblom/partAng/screenshots/mh4.png)
 
 <hr>
 
-## Project Summary / Demonstrated
-Continuation of long term project. Changing everything possible from **VanillaJS** to **jQuery**
+## Project Summary / Requirements
+Continuation of long term project. Rewriting the entire project using **AngularJS**. Full **CRUD** capabilities and interaction between the music library interface and Firebase database. User-specific authorization: users "a" and "b" have passwords of 123456, and they have user-specific songs loaded onto them. **Bootstrap**, **Font-Awesome**, and **Sass** used in styling.
+
 <hr>
 
-## Requirements
+## To Access Necessary Libaries:
+ - Pull down project
+ - cd into lib
+ - Run command "bower install"
+ - Run command "npm install"
+ - Seed database/seed.json to firebase with read & write permissions of:
 
-### Part One
-
-1. Implement **jQuery** in your Music History code. Every `innerHTML`, `getElementById`, `getElementByClassName`, event listener and XHR request. Convert them all.
+```{ "rules": { ".read": "true", ".write": "true", "songs": { ".indexOn": "uid" }, "users": { ".indexOn": "uid"}}}```
+ - Finally, run grunt from lib directory before serving up.

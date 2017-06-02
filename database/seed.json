@@ -1,0 +1,78 @@
+{
+  "songs": {
+    "song0": {
+      "name": "Mad Man",
+      "artist": "Haste the Day",
+      "album": "Dreamer",
+      "genre": "Hardcore",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/1/15/HastethedayDREAMER.jpg/220px-HastethedayDREAMER.jpg",
+      "uid" : "RVYmQNdBR7Z8MLlAcwhbJxJoNMm1"
+    },
+    "song1": {
+      "name": "Lighten Up",
+      "artist": "Code Machine",
+      "album": "Code Machine",
+      "genre": "Indie",
+      "cover": "https://f4.bcbits.com/img/a0291831725_16.jpg",
+      "uid" : "mxUBZJMitPUguGBIrxMDcnRtHVv1"
+    },
+    "song2": {
+      "name": "Back to Back",
+      "artist": "Dustin Kensrue",
+      "album": "Carry the Fire",
+      "genre": "Acoustic",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Carry_the_Fire_by_Dustin_Kensrue.jpg/220px-Carry_the_Fire_by_Dustin_Kensrue.jpg",
+      "uid" : "RVYmQNdBR7Z8MLlAcwhbJxJoNMm1"
+    },
+    "song3": {
+      "name": "The Grand Illusion",
+      "artist": "Styx",
+      "album": "The Grand Illusion",
+      "genre": "Classic Rock",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/5/5a/Styx_-_The_Grand_Illusion.jpg",
+      "uid" : "mxUBZJMitPUguGBIrxMDcnRtHVv1"
+    },
+    "song4": {
+      "name": "Vacancy",
+      "artist": "As I Lay Dying",
+      "album": "The Powerless Rise",
+      "genre": "Metal",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/0/02/As_I_Lay_Dying_-_Powerless_Rise.jpg",
+      "uid" : "RVYmQNdBR7Z8MLlAcwhbJxJoNMm1"
+    },
+    "song5": {
+      "name": "Reinventing Your Exit",
+      "artist": "Underoath",
+      "album": "They're Only Chasing Safety",
+      "genre": "Hardcore",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Underoath-Theyre_Only_Chasing_Safety.jpg/220px-Underoath-Theyre_Only_Chasing_Safety.jpg",
+      "uid" : "mxUBZJMitPUguGBIrxMDcnRtHVv1"
+    },
+    "song6": {
+      "name": "Atlantic",
+      "artist": "Thrice",
+      "album": "Vheissu",
+      "genre": "Alternative",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/Thrice_-_Vheissu_cover.jpg/220px-Thrice_-_Vheissu_cover.jpg",
+      "uid" : "RVYmQNdBR7Z8MLlAcwhbJxJoNMm1"
+    },
+    "song7": {
+      "name": "Clipping",
+      "artist": "Mutemath",
+      "album": "Armistice",
+      "genre": "Rock",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/3/3c/Armistice_Mute_Math.jpg",
+      "uid" : "mxUBZJMitPUguGBIrxMDcnRtHVv1"
+    }
+  },
+  "users" : {
+    "user0" : {
+      "uid" : "mxUBZJMitPUguGBIrxMDcnRtHVv1",
+      "username" : "a"
+    },
+    "user1" : {
+      "uid" : "RVYmQNdBR7Z8MLlAcwhbJxJoNMm1",
+      "username" : "b"
+    }
+  }
+}

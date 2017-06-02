@@ -1,0 +1,21 @@
+<nav class="navbar navbar-inverse" ng-controller="NavCtrl">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      </button>
+			<a class="navbar-brand header-font" href="#">Memory Lane Music</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right" ng-if="user.uid">
+		    	<li><a href="#!/item/list">List Songs</a></li>
+		    	<li><a href="#!/item/new">Add Song</a></li>
+          <li><a href="#!/logout">Logout</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" ng-if="!user.uid">
+          <li><a href="#!/auth">Authenticate</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

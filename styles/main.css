@@ -1,0 +1,59 @@
+body {
+  background: url("http://hdwallpaperia.com/wp-content/uploads/2013/11/Record-Store-Photo.jpg");
+  font-family: 'Oswald', arial, sans-serif; }
+
+h1 {
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 0 0 30px white; }
+
+.header-font {
+  font-family: 'Cutive', serif; }
+
+.box-style {
+  color: white;
+  background-color: black;
+  box-shadow: 0 0 30px white;
+  border-radius: 5px; }
+  .box-style input {
+    color: black; }
+
+.authButton {
+  background-color: black;
+  color: gray; }
+
+.songInListView {
+  font-size: 1.1em;
+  padding: 3%; }
+
+.songInSingleView {
+  font-size: 2em;
+  padding: 5%;
+  height: 450px; }
+
+.songInEditView {
+  font-size: 2em;
+  padding: 5%;
+  height: 550px;
+  width: 50%; }
+  .songInEditView input {
+    display: block; }
+
+.thumbnail {
+  height: 125px;
+  width: 125px; }
+
+.deleteIcon {
+  color: red;
+  font-size: 1.3em; }
+
+.songInfo {
+  font-size: 2em; }
+
+.view-artwork {
+  height: 300px;
+  width: 300px;
+  margin-right: 70px; }
+
+.fa {
+  margin-right: 20px; }

@@ -1,87 +1,39 @@
-<!--//////////////////////////////////////// PLATE ///////////////////////////////////////////////-->
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>MH5</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Memory Lane Music</title>
+    <link rel="stylesheet" type="text/css" href="./lib/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Cutive|Oswald" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
   </head>
-  <body>
+  <body ng-app="MusicHistoryApp">
 
-<!--//////////////////////////////////////// LINKS ///////////////////////////////////////////////-->
+    <div ng-include="'partials/navbar.html'"></div> 
+    <div class="col-xs-8 col-xs-offset-2" ng-view></div>
 
-    <ul id="top">
-      <li class="topLink"><a href="#" id="link-list" class="active">List Music</a></li> |
-      <li class="topLink"><a href="#" id="link-add">Add Music</a></li>
-    </ul>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script type="text/javascript" src="./lib/bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="./lib/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./lib/bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./lib/bower_components/angular-route/angular-route.min.js"></script>
 
-<!--//////////////////////////////////////// LIST VIEW ///////////////////////////////////////////////-->
+    <script type="text/javascript" src="./javascripts/app.js"></script>
+    <script type="text/javascript" src="./javascripts/AppConfig.js"></script>
+    <script type="text/javascript" src="./javascripts/AppConstants.js"></script>
 
-    <div class="containers visible" id="list-view">       
-      <div id="left">
-          <label for="songlength">Song length:</label>
-            <input type="range" value="50%" class="wider">
-          <label for="artist">Artist:</label>
-          <select name="artist" class="wider">
-            <option value="">Options</option>
-            <option value="">Another Option</option>
-            <option value="">Yet Another</option>
-          </select>
-          <label for="album">Album:</label>
-          <select name="album" class="wider">
-            <option value="">Options</option>
-            <option value="">Another Option</option>
-            <option value="">Yet Another</option>
-          </select>
-        <label for="genre">Genre:</label>
-        <div class="genres">
-            <input type="checkbox" name="genre" value=""> Rock <br>
-            <input type="checkbox" name="genre" value=""> Pop <br>
-            <input type="checkbox" name="genre" value=""> Blues <br>
-        </div>
-        <div class="genres">
-            <input type="checkbox" name="genre" class="value=""> Classical <br>
-            <input type="checkbox" name="genre" value=""> Jazz <br>
-            <input type="checkbox" name="genre" value=""> Hip Hop <br>
-        </div>
-       <div class="buttonWrap">
-            <button class="bigger" align="center">Filter</button>
-        </div>
-      </div>
+    <script type="text/javascript" src="./javascripts/factories/AuthFactory.js"></script>
+    <script type="text/javascript" src="./javascripts/factories/UserFactory.js"></script>
+    <script type="text/javascript" src="./javascripts/factories/ItemFactory.js"></script>
 
-      <div id="right">
-        <!-- Songs get written here -->
-      </div>
+    <script type="text/javascript" src="./javascripts/controllers/AuthCtrl.js"></script>
+    <script type="text/javascript" src="./javascripts/controllers/ItemEditCtrl.js"></script>
+    <script type="text/javascript" src="./javascripts/controllers/ItemListCtrl.js"></script>
+    <script type="text/javascript" src="./javascripts/controllers/ItemNewCtrl.js"></script>
+    <script type="text/javascript" src="./javascripts/controllers/ItemViewCtrl.js"></script>
+    <script type="text/javascript" src="./javascripts/controllers/NavCtrl.js"></script>
 
-    </div>
-
-<!--//////////////////////////////////////// ADD VIEW ///////////////////////////////////////////////-->
-
-    <div class="hidden" id="add-view">
-       <div class="addMusic">
-         <label for="songName">Song Name:</label>
-         <input type="text" id="addTitleField"></input>
-         <label for="artist">Artist:</label>
-         <input type="text" id="addArtistField"></input>
-         <label for="album">Album:</label>
-         <input type="text" id="addAlbumField"></input>
-       </div>
-       <div class="buttonWrap">
-          <button id="clickToAddSong" class="addSong bigger" align="center">Add</button>
-      </div>
-    </div>
-
-
-<!--//////////////////////////////////////// SCRIPTS ///////////////////////////////////////////////-->
-
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="javascripts/views.js"></script>
-    <script type="text/javascript" src="javascripts/songs.js"></script>
-    <script type="text/javascript" src="javascripts/SongIife.js"></script>
-    <script type="text/javascript" src="javascripts/DOMhandler.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 
-</html> 
+</html>
